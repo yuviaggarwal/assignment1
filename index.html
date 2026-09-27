@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="site-nav">
+            <h2 class="logo">Yuvi.</h2>
+
+            <div>
+                <a href="#about-me">About</a>
+                <a href="#hobbies">Hobbies</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <div>
+                <p class="small-text">HELLO, I'M</p>
+                <h1>Yuvi Aggarwal</h1>
+                <p class="intro">
+                    A Computer Science student who loves creativity,
+                    technology and exploring new things.
+                </p>
+
+                <a href="#about-me" class="hero-button">Explore My Page ↓</a>
+            </div>
+
+            <img src="images/profile.jpg" alt="Photo of Yuvi Aggarwal">
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- About Me -->
+        <section id="about-me" class="section">
+
+            <p class="section-label">01 — ABOUT ME</p>
+            <h2>A little about me</h2>
+
+            <p>
+                I am a Computer Science student interested in web development
+                and designing creative digital experiences. I enjoy learning
+                new technologies and turning ideas into simple and useful
+                websites.
+            </p>
+
+            <button type="button">Click Me</button>
+
+        </section>
+
+
+        <!-- Hobbies -->
+        <section id="hobbies" class="section">
+
+            <p class="section-label">02 — MY HOBBIES</p>
+            <h2>Things I enjoy</h2>
+
+            <ol>
+                <li>Designing websites</li>
+                <li>Listening to music</li>
+                <li>Travelling</li>
+                <li>Watching movies</li>
+            </ol>
+
+            <h3>My Favorite Websites</h3>
+
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com" target="_blank">
+                        YouTube
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com" target="_blank">
+                        Instagram
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.google.com" target="_blank">
+                        Google
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+
+        <!-- Schedule -->
+        <section id="schedule" class="section">
+
+            <p class="section-label">03 — MY SCHEDULE</p>
+            <h2>Class Schedule</h2>
+
+            <table>
+
+                <tr>
+                    <th>Subject</th>
+                    <th>Day</th>
+                    <th>Time</th>
+                </tr>
+
+                <tr>
+                    <td>Web Development</td>
+                    <td>Monday</td>
+                    <td>10:00 AM</td>
+                </tr>
+
+                <tr>
+                    <td>Statistics</td>
+                    <td>Tuesday</td>
+                    <td>11:00 AM</td>
+                </tr>
+
+                <tr>
+                    <td>Data Engineering</td>
+                    <td>Wednesday</td>
+                    <td>2:00 PM</td>
+                </tr>
+
+                <tr>
+                    <td>OOPS</td>
+                    <td>Thursday</td>
+                    <td>12:00 PM</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <!-- Mood -->
+        <section class="mood">
+
+            <p class="section-label">04 — TODAY</p>
+
+            <h2>Current Mood ✨</h2>
+
+            <p>
+                Feeling happy 😊, excited ✨ and motivated 💻
+                to learn something new!
+            </p>
+
+        </section>
+
+
+        <!-- Contact Form -->
+        <section id="contact" class="section">
+
+            <p class="section-label">05 — SAY HELLO</p>
+            <h2>Tell me about you</h2>
+
+            <form>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Your name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"
+                       placeholder="your@email.com">
+
+                <label for="color">Favorite Color</label>
+                <input type="color" id="color" name="color">
+
+                <button type="submit">Submit →</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Made with ♡ by Yuvi Aggarwal</p>
+    </footer>
+
+</body>
+</html>

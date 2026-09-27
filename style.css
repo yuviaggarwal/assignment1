@@ -1,0 +1,289 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f3ee;
+    color: #24332d;
+    line-height: 1.6;
+}
+
+
+/* ---------- HEADER ---------- */
+
+header {
+    background: #dce8df;
+    min-height: 550px;
+    padding: 0 8%;
+}
+
+
+/* Descendant Selector */
+.site-nav a {
+    color: #24332d;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+.site-nav a:hover {
+    color: #7b5e57;
+    text-decoration: underline;
+}
+
+.site-nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 0;
+    font-size: 25px;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin: 5px 0;
+    color: #24332d;
+}
+
+.small-text {
+    letter-spacing: 3px;
+    font-size: 13px;
+    color: #7b5e57;
+    font-weight: bold;
+}
+
+.intro {
+    max-width: 500px;
+    font-size: 18px;
+    color: #52635a;
+}
+
+.hero img {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid #f7f3ee;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ---------- BUTTON ---------- */
+
+.hero-button {
+    display: inline-block;
+    background: #24332d;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.hero-button:hover {
+    background: #7b5e57;
+}
+
+
+/* ---------- SECTIONS ---------- */
+
+.section {
+    width: 75%;
+    margin: 70px auto;
+    padding: 35px;
+    background: white;
+    border: 1px solid #e5ded6;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.section-label {
+    color: #9a776e;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.section h2,
+.mood h2 {
+    font-size: 32px;
+    margin-top: 5px;
+}
+
+
+/* ---------- ID SELECTOR ---------- */
+
+#about-me {
+    border-left: 5px solid #9a776e;
+}
+
+
+/* ---------- CLASS SELECTOR ---------- */
+
+.mood {
+    width: 75%;
+    margin: 70px auto;
+    padding: 45px;
+    text-align: center;
+    background: #e9dfd5;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+
+/* ---------- LISTS ---------- */
+
+ol li,
+ul li {
+    margin: 10px 0;
+}
+
+ul a {
+    color: #7b5e57;
+    text-decoration: none;
+}
+
+ul a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------- TABLE ---------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+th,
+td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd4cc;
+    text-align: left;
+}
+
+th {
+    background: #24332d;
+    color: white;
+}
+
+
+/* ---------- FORM ---------- */
+
+form {
+    max-width: 550px;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #d4cbc2;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background: #faf8f5;
+}
+
+input[type="color"] {
+    width: 70px;
+    height: 45px;
+}
+
+
+/* ---------- BUTTON ---------- */
+
+button {
+    background: #24332d;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #7b5e57;
+}
+
+
+/* ---------- FOCUS ---------- */
+
+a:focus,
+button:focus,
+input:focus {
+    outline: 3px solid #c9a99d;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background: #24332d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    .site-nav {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .site-nav a {
+        margin: 0 7px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .section,
+    .mood {
+        width: 90%;
+    }
+
+}
